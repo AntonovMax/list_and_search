@@ -7,14 +7,14 @@ function Table({ usersInArray }) {
 
   return (
     <div className='table'>
-      <div key='row' className='row'>
-        <div>Firstname</div>
-        <div>Lastname</div>
-        <div>Patronymic</div>
-        <div>Status</div>
+      <div key='row' className='row border_pink'>
+        <div>Имя</div>
+        <div>Фамилия</div>
+        <div>Отчество</div>
+        <div>Статус заказа</div>
       </div>
       {usersInArray.map((el) => {
-        return <div key={el[0]} className='row'>
+        return <div key={el[0]} className='row border_grey'>
           <div>{el[1].firstName}</div>
           <div>{el[1].lastName}</div>
           <div>{el[1].patronymic}</div>

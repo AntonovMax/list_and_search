@@ -1,8 +1,57 @@
+input {
+  background: transparent;
+  color: aliceblue;
+  font-family: 'Alumni Sans', sans-serif;
+  font-size: 26px;
+  border: none;
+}
+
+
+input[type=text] {
+  border-bottom: 1px solid rgb(196, 22, 138);
+  height: 30px;
+  padding: 7px 0px 1px 0px;
+}
+
+input[type=text]:focus {
+  outline: transparent;
+}
+
+input[type=text]:active {
+  background: transparent;
+}
+
+
+input[type='button'] {
+  margin-top: 30px;
+}
+
+input[type='button']:hover {
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+
 select {
-  width: 150px;
+  width: 100px;
   border: none;
   background-color: transparent;
-  font-size: 16px;
+  color:rgb(243, 234, 240);
+  font-size: 26px;
+  font-family: 'Alumni Sans', sans-serif;
+}
+
+option {
+  background-color: rgb(26, 21, 24);
+  border: none;
 }
 
 
@@ -13,23 +62,30 @@ select {
 
 .menu_wrapper {
   width: 100%;
-  padding: 2rem;
-  background: rgb(90, 124, 107);
+  padding: 4rem;
   box-sizing: border-box;
 }
 
 .menu {
-  width: 80%;
+  width: 100%;
 }
 
 .table {
   width: 100%;
-  padding: 5rem;
+  padding: 4rem 7rem 0rem 2rem;
   box-sizing: border-box;
 }
 
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 5px;
+  padding: 7px 0px 1px 0px;
+}
+
+.border_pink {
+  border-bottom: 1px solid rgb(196, 22, 138);
+}
+
+.border_grey {
+  border-bottom: 1px solid rgb(83, 70, 79);
 }
