@@ -1,3 +1,11 @@
+select {
+  width: 150px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+
 .wrapper {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -6,6 +14,8 @@
 .menu_wrapper {
   width: 100%;
   padding: 2rem;
+  background: rgb(90, 124, 107);
+  box-sizing: border-box;
 }
 
 .menu {
@@ -14,10 +24,12 @@
 
 .table {
   width: 100%;
-  padding: 2rem;
+  padding: 5rem;
+  box-sizing: border-box;
 }
 
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 5px;
 }
