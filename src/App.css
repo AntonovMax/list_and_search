@@ -1,0 +1,23 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.menu_wrapper {
+  width: 100%;
+  padding: 2rem;
+}
+
+.menu {
+  width: 80%;
+}
+
+.table {
+  width: 100%;
+  padding: 2rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
