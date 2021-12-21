@@ -6,7 +6,7 @@ function Table({ usersInArray }) {
   const dispatch = useDispatch()
 
   return (
-    <div className='table'>
+    <div className='table' onChange={(event) => dispatch({ type: 'CHANGE_STATUS', payload: {id: event.target.id, status: Number(event.target.value) }  })}>
       <div key='row' className='row border_pink'>
         <div>Имя</div>
         <div>Фамилия</div>
@@ -18,7 +18,7 @@ function Table({ usersInArray }) {
           <div>{el[1].firstName}</div>
           <div>{el[1].lastName}</div>
           <div>{el[1].patronymic}</div>
-          <select name="" id="" defaultValue={el[1].status} onChange={(event) => dispatch({ type: 'CHANGE_STATUS', payload: {id: el[0], status: Number(event.target.value) }  })}>
+          <select name="" id={el[0]} defaultValue={el[1].status} >
             <option value='1'>Ожидает</option>
             <option value='2'>В работе</option>
           </select>
